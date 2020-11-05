@@ -1,0 +1,42 @@
+.sidepanel {
+  // общие настройки
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+  // 1-й способ стилизации sidepanel
+  // width: 70px;
+  // height: 2px;
+  // top: 400px;
+  // left: -140px;
+  // width: 338px;
+  // transform: rotate(-90deg);
+
+  // 2-й способ стилизации sidepanel (сложный)
+  flex-direction: column;
+  height: 338px;
+  top: 230px;
+  left: 50px;
+
+  &__divider {
+    // 1-й способ стилизации sidepanel
+    // width: 70px;
+    // height: 2px;
+
+    // 2-й способ стилизации sidepanel (сложный)
+    width: 2px;
+    height: 70px;
+    background-color: #000;
+  }
+  // 2-й способ стилизации sidepanel (сложный)
+  &__text {
+    height: 150px;
+    width: 25px;
+    span {
+      transform: rotate(-90deg) translate(-30%, -260%);
+      display: block;
+      width: 150px;
+    }
+  }
+}
