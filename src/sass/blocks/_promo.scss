@@ -1,17 +1,11 @@
 .promo {
   min-height: 100vh;
-  position: relative;
+  // position: relative;
   background: url("../img/main_bg.png") no-repeat 50% / cover;
   padding-top: 206px;
   &__title {
     width: 535px;
     margin-top: 9px;
-  }
-  &__subtitle {
-    position: relative;
-    padding-left: 10px;
-    z-index: 2;
-    @include before_circle;
   }
   &__btns {
     margin-top: 25px;
