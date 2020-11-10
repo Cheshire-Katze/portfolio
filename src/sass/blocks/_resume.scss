@@ -1,7 +1,7 @@
 .resume {
   padding-top: 120px;
   &__wrapper {
-    padding: 60px 77px 0; // у преподавателя 65px!
+    padding: 0 77px; // у преподавателя 65px!
     display: grid;
     grid-template-columns: repeat(2, 425px);
     column-gap: 135px;

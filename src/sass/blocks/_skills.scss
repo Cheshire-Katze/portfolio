@@ -1,3 +1,42 @@
 .skills {
   padding-top: 120px;
+  &__technologies {
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    grid-template-rows: repeat(2, 270px);
+    gap: 13px;
+    &-item {
+      padding: 30px 30px 25px;
+      border: 1px solid #000;
+    }
+    &-title {
+      margin: 20px 0 15px;
+    }
+  }
+}
+
+.skills {
+  &__level {
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, 70px);
+
+    column-gap: 45px;
+    row-gap: 30px;
+    &-item {
+      display: grid;
+      grid-template-columns: 300px 50px;
+    }
+    &-percent {
+      text-align: right;
+    }
+    &-indicator {
+      width: 350px;
+      height: 14px;
+      background: #e8e4de;
+      border-radius: 4px;
+    }
+  }
 }
