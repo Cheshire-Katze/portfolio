@@ -18,3 +18,24 @@
     font-size: 48px;
   }
 }
+
+.title_center {
+  position: relative; 
+  text-align: center;
+  @include before_circle;
+  &:before {
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.subtitle_center {
+  text-align: center;
+}
+
+.title_left {
+  position: relative;
+  padding-left: 10px;
+  z-index: 2;
+  @include before_circle;
+}

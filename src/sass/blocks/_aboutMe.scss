@@ -17,9 +17,6 @@
     &__text {
         padding-top: 6px;
     }
-    &__title {
-        margin-top: 6px;
-    }
     .divider {
         margin: 0;
     }
@@ -37,6 +34,10 @@
         &-item {
             position: relative;
             padding-left: 60px;
+            @include before_circle;
+            &:before {
+                top: 0;
+            }
         }
         &-icon {
             position: absolute;
