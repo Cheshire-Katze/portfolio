@@ -17,25 +17,23 @@
   &_fz48 {
     font-size: 48px;
   }
-}
-
-.title_center {
-  position: relative; 
-  text-align: center;
-  @include before_circle;
-  &:before {
-    top: -6px;
-    left: 50%;
-    transform: translateX(-50%);
+  &_center {
+    position: relative;
+    text-align: center;
+    @include before_circle;
+    &:before {
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &_left {
+    position: relative;
+    padding: 6px 0 0 13px;
+    z-index: 2;
+    @include before_circle;
   }
 }
 .subtitle_center {
   text-align: center;
-}
-
-.title_left {
-  position: relative;
-  padding: 6px 0 0 13px;
-  z-index: 2;
-  @include before_circle;
 }
