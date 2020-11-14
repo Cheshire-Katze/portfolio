@@ -2,7 +2,7 @@
     padding-top: 120px;
     &__wrp {
         display: grid;
-        grid-template: repeat(2, 280px) / repeat(4, 280px);
+        grid-template: repeat(2, 280px) / repeat(4, 280px); // строки / колонки
         grid-auto-rows: 280px;
         gap: 5px;
         .vertical {
@@ -10,7 +10,7 @@
             grid-column: 4 / 5;
         }
         .horizontal {
-            // grid-row: 2 / 3;
+            grid-row: 2 / 3;
             grid-column: 2 / 4;
         }
     }
