@@ -440,7 +440,9 @@
     <section class="contacts">
         <div class="container">
             <div class="contacts__wrp">
-                <img class="contacts__photo" src="img/main_photo.png" alt="photo">
+                <div class="contacts__photo">
+                    <img src="img/main_photo.png" alt="photo">
+                </div>
                 <div class="contacts__text">
                     <h2 class="title title_fz16 title_left">Контакты</h2>
                     <div class="title">Свяжитесь со мной</div>
@@ -468,11 +470,13 @@
                     <form action="#" class="contacts__form">
 
                         <div class="contacts__input">
-                            <input class="descr descr_fz12" name="name" id="name" type="text">
+                            <input required class="descr descr_fz12" name="name" id="name" type="text">
+                            <!-- requared - атрибут благодаря которому поле должно быть заполнено пользователем -->
                             <label class="descr descr_fz12" for="name">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input class="descr descr_fz12" name="email" id="email" type="email">
+                            <input required class="descr descr_fz12" name="email" id="email" type="email">
+                            <!-- requared - атрибут благодаря которому поле должно быть заполнено пользователем -->
                             <label class="descr descr_fz12" for="email">Ваша почта</label>
                         </div>
 
@@ -481,8 +485,13 @@
                             <label class="descr descr_fz12" for="text">Ваше сообщение</label>
                         </div>
                         <!-- поместили btn в обертку для того чтобы кнопка не занимала всю колонку grid сетки -->
-                        <div>  
+                        <div class="contacts__triggers">
                             <button class="descr contacts__btn btn">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span class="descr descr_fz12">Я согласен(а) с <a href="/policy.html">политикой
+                                        конфиденциальности</a></span>
+                            </div>
                         </div>
                     </form>
                 </div>
