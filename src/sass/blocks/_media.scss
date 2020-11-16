@@ -1,0 +1,110 @@
+@media (max-width: 1440px) {
+  .sidepanel {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px; // данные величины взяты из головы соотв. правилам хорошего тона в верстке
+  }
+  .aboutMe {
+    &__grid-container {
+      grid-template-columns: 400px 520px;
+      column-gap: 40px;
+      padding: 0;
+    }
+    &__skills {
+      column-gap: 20px;
+      grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 250px);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px; // данные величины взяты из головы соотв. правилам хорошего тона в верстке
+  }
+  .title {
+    &_fz36 {
+      font-size: 30px;
+    }
+  }
+  .aboutMe {
+    &__grid-container {
+      grid-template-columns: 300px 380px;
+    }
+    &__skills {
+      grid-template-columns: 360px;
+      grid-auto-rows: minmax(115px, auto)
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px; // данные величины взяты из головы соотв. правилам хорошего тона в верстке
+  }
+  .title {
+    &_fz48 {
+      font-size: 28px;
+    }
+  }
+  .promo {
+    &__title {
+      line-height: 39px;
+      width: 300px;
+    }
+  }
+  .aboutMe {
+    padding-top: 40px;
+    &__grid-container {
+      grid-template: 400px auto auto / 1fr;
+    }
+    &__photo {
+      grid-row: unset;
+    }
+    &__skills {
+      grid-template-columns: repeat(2, 260px);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%; // данные величины взяты из головы соотв. правилам хорошего тона в верстке
+    padding: 0 10px; // данные величины взяты из головы соотв. правилам хорошего тона в верстке
+  }
+  .title {
+    &_fz48 {
+      font-size: 26px;
+    }
+    &_fz36 {
+      font-size: 24px;
+    }
+  }
+  .hamburger {
+    right: 20px;
+  }
+  .menu {
+    &__block {
+      width: 250px;
+      padding-left: 20px;
+    }
+  }
+  .promo {
+    background: url("../img/main_bg.png") no-repeat 57% / cover;
+    &__btns {
+      margin-top: 30px;
+    }
+  }
+  .aboutMe {
+    
+    &__grid-container {
+      grid-template: 400px auto auto / 1fr;
+    }
+    &__skills {
+      grid-template-columns: 1fr;
+    }
+  }
+}
