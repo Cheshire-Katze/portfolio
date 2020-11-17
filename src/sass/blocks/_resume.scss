@@ -7,6 +7,9 @@
     column-gap: 135px;
   }
   &__column {
+    h3 {
+      margin-bottom: 0;
+    }
     &-title {
       position: relative;
       padding-left: 35px;
@@ -29,9 +32,9 @@
         &:after {
           content:'';
           width: 1px;
-          height: calc(100% + 16px);
+          height: calc(100% + 9px);
           position: absolute;
-          top: -16px;
+          top: -9px;
           left: 0;
           background-color: #000000;
         }

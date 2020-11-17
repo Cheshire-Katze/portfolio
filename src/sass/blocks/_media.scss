@@ -2,13 +2,26 @@
   .sidepanel {
     display: none;
   }
+  .aboutMe {
+    padding-top: 60px;
+  }
+  .resume {
+    padding-top: 60px;
+  }
+  .skills {
+    padding-top: 60px;
+  }
 }
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px; // данные величины взяты из головы соотв. правилам хорошего тона в верстке
   }
+  .divider {
+    margin: 15px auto 40px;
+  }
   .aboutMe {
+    padding-top: 40px;
     &__grid-container {
       grid-template-columns: 400px 520px;
       column-gap: 40px;
@@ -19,11 +32,31 @@
       grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 250px);
     }
   }
+  .resume {
+    padding-top: 40px;
+    &__wrapper {
+      padding: 0 5px;
+      column-gap: 110px;
+    }
+  }
+  .skills {
+    padding-top: 40px;
+    &__technologies {
+      grid-template: repeat(3,minmax(270px,auto))/repeat(3,270px);
+      justify-content: center;
+    }
+    &__level {
+      margin-top: 60px;
+      grid-template: repeat(3,minmax(70px,auto))/repeat(2,350px);
+      column-gap: 130px;
+      justify-content: center;
+    }
+  }
 }
 
 @media (max-width: 992px) {
   .container {
-    max-width: 720px; // данные величины взяты из головы соотв. правилам хорошего тона в верстке
+    max-width: 720px; // данные величины взяты из головы в соотв. правилам хорошего тона в верстке
   }
   .title {
     &_fz36 {
@@ -37,6 +70,23 @@
     &__skills {
       grid-template-columns: 360px;
       grid-auto-rows: minmax(115px, auto)
+    }
+  }
+  .resume {
+    &__wrapper {
+      grid-template-columns: repeat(2,325px);
+      column-gap: 70px;
+    }
+  }
+  .skills {
+    &__technologies {
+      grid-template: repeat(4,minmax(270px,auto))/repeat(2,270px);
+      padding: 0;
+      gap: 10px;
+    }
+    &__level {
+      grid-template: repeat(3,minmax(70px,auto))/repeat(2,335px);
+      column-gap: 50px;
     }
   }
 }
@@ -57,7 +107,6 @@
     }
   }
   .aboutMe {
-    padding-top: 40px;
     &__grid-container {
       grid-template: 400px auto auto / 1fr;
     }
@@ -68,12 +117,27 @@
       grid-template-columns: repeat(2, 260px);
     }
   }
+  .resume {
+    &__wrapper {
+      grid-template-columns: auto;
+      row-gap: 40px;
+    }
+  }
+  .skills {
+    &__level {
+      margin-top: 40px;
+      grid-template: repeat(6,minmax(70px,auto)) / 540px;
+    }
+  }
 }
 
 @media (max-width: 576px) {
   .container {
     width: 100%; // данные величины взяты из головы соотв. правилам хорошего тона в верстке
     padding: 0 10px; // данные величины взяты из головы соотв. правилам хорошего тона в верстке
+  }
+  .divider {
+    margin: 15px auto 20px;
   }
   .title {
     &_fz48 {
@@ -99,12 +163,27 @@
     }
   }
   .aboutMe {
-    
     &__grid-container {
       grid-template: 400px auto auto / 1fr;
     }
     &__skills {
       grid-template-columns: 1fr;
+    }
+  }
+  .skills {
+    .title {
+      &_fz36 {
+        line-height: 36px;
+      }
+    }
+    &__technologies {
+      grid-template: repeat(7,minmax(270px,auto)) / 270px;
+      grid-auto-rows: 270px;
+    }
+    &__level {
+      margin-top: 40px;
+      grid-template: repeat(6,minmax(70px,auto))/300px;
+      row-gap: 40px;
     }
   }
 }
