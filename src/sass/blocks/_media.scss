@@ -1,4 +1,4 @@
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
   .sidepanel {
     display: none;
   }
@@ -42,14 +42,15 @@
   .skills {
     padding-top: 40px;
     &__technologies {
-      grid-template: repeat(3,minmax(270px,auto))/repeat(3,270px);
-      justify-content: center;
+      grid-template-columns: repeat(auto-fit, 270px);
+      justify-content: space-between;
+      grid-auto-rows: 270px;
     }
     &__level {
-      margin-top: 60px;
-      grid-template: repeat(3,minmax(70px,auto))/repeat(2,350px);
-      column-gap: 130px;
-      justify-content: center;
+      grid-template-columns: repeat(auto-fit, 350px);
+      grid-auto-rows: minmax(70px, auto);
+      justify-content: space-between;
+      padding: 0 5px;
     }
   }
 }
@@ -69,24 +70,21 @@
     }
     &__skills {
       grid-template-columns: 360px;
-      grid-auto-rows: minmax(115px, auto)
+      grid-auto-rows: minmax(115px, auto);
     }
   }
   .resume {
     &__wrapper {
-      grid-template-columns: repeat(2,325px);
+      grid-template-columns: repeat(2, 325px);
       column-gap: 70px;
     }
   }
   .skills {
-    &__technologies {
-      grid-template: repeat(4,minmax(270px,auto))/repeat(2,270px);
-      padding: 0;
-      gap: 10px;
-    }
     &__level {
-      grid-template: repeat(3,minmax(70px,auto))/repeat(2,335px);
-      column-gap: 50px;
+      grid-template-columns: repeat(auto-fit, 320px);
+      justify-content: space-between;
+      // padding: 0;
+      // column-gap: 0;
     }
   }
 }
@@ -119,14 +117,21 @@
   }
   .resume {
     &__wrapper {
-      grid-template-columns: auto;
+      grid-template-columns: 1fr;
       row-gap: 40px;
     }
   }
   .skills {
+    &__technologies {
+      padding: 0;
+      justify-content: center;
+      gap: 20px;
+    }
     &__level {
       margin-top: 40px;
-      grid-template: repeat(6,minmax(70px,auto)) / 540px;
+      grid-template-columns: repeat(auto-fit, 320px);
+      grid-auto-rows: minmax(70px, auto);
+      justify-content: center;
     }
   }
 }
@@ -176,14 +181,8 @@
         line-height: 36px;
       }
     }
-    &__technologies {
-      grid-template: repeat(7,minmax(270px,auto)) / 270px;
-      grid-auto-rows: 270px;
-    }
     &__level {
-      margin-top: 40px;
-      grid-template: repeat(6,minmax(70px,auto))/300px;
-      row-gap: 40px;
+      grid-template-columns: repeat(auto-fit,300px);
     }
   }
 }
