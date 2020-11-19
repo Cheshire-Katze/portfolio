@@ -127,7 +127,7 @@
             <span></span>
         </div>
         <div class="container">
-            <div class="title title_fz16 title_left">Меня зовут Александра Смит</div>
+            <div class="title title_fz16 title_left">Меня зовут Ольдер Сергей</div>
             <h1 class="title title_fz48 promo__title">Я web-разработчик из города Москва</h1>
             <div class="promo__btns">
                 <a href="#" class="promo__link btn">Портфолио</a>
@@ -140,7 +140,14 @@
         <div class="container">
             <div class="aboutMe__grid-container">
                 <div class="aboutMe__photo">
-                    <img src="img/photo2.png" alt="photo">
+                        <!-- picture - позволяет использовать разные картинки на разных разрешениях
+                         max-width: 576px - ДО заданного разрешения загрузить какртинку указанную в srcset
+                         min-width: 577px - ОТ заданного разрешения загрузить картинку указанную в scrset -->
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/main_photo-min.jpg">
+                        <source media="(min-width: 577px)" srcset="img/main_photo.jpg">
+                        <img src="img/main_photo.jpg" alt="photo">
+                    </picture>
                 </div>
                 <div class="aboutMe__text">
                     <h2 class="title title_fz16 title_left">Про меня</h2>
