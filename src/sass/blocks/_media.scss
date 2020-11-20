@@ -43,7 +43,7 @@
     padding-top: 40px;
     &__technologies {
       grid-template-columns: repeat(auto-fit, 270px);
-      justify-content: space-between;
+      justify-content: space-around;
       grid-auto-rows: 270px;
     }
     &__level {
@@ -54,15 +54,28 @@
     }
   }
   .portfolio {
+    padding-top: 60px;
     &__wrp {
       grid-template-columns: repeat(auto-fit, 280px);
       grid-auto-rows: 280px;
       justify-content: space-around;
       row-gap: 35px;
-      .horizontal, .vertical {
+      .horizontal,
+      .vertical {
         grid-row: unset;
         grid-column: unset;
       }
+    }
+  }
+  .contacts {
+    padding: 60px 0 45px;
+    &__wrp {
+      padding: 0;
+      grid-template-columns: 400px 540px;
+      column-gap: 20px;
+    }
+    &__form {
+      grid-template: 45px 190px 45px / repeat(auto-fit, 260px);
     }
   }
 }
@@ -103,6 +116,15 @@
     &__wrp {
       grid-template-columns: repeat(auto-fit, 350px);
       padding: 0;
+    }
+  }
+  .contacts {
+    &__photo {
+      display: none;
+    }
+    &__wrp {
+      grid-template-columns: repeat(auto-fit, 570px);
+      justify-content: center;
     }
   }
 }
@@ -164,6 +186,12 @@
   .divider {
     margin-bottom: 20px;
   }
+  .contacts {
+    &__form {
+      // grid-template: 45px 45px 190px 45px 45px / 300px;
+      // grid-template-columns: repeat(auto-fit, 300px);
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -212,7 +240,7 @@
       }
     }
     &__level {
-      grid-template-columns: repeat(auto-fit,300px);
+      grid-template-columns: repeat(auto-fit, 300px);
     }
   }
   .price {
