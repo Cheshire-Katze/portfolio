@@ -71,11 +71,10 @@
     padding: 60px 0 45px;
     &__wrp {
       padding: 0;
-      grid-template-columns: 400px 540px;
-      column-gap: 20px;
+      grid-template-columns: 400px 520px;
     }
     &__form {
-      grid-template: 45px 190px 45px / repeat(auto-fit, 260px);
+      grid-template: 45px 190px 45px / repeat(2, 250px);
     }
   }
 }
@@ -123,8 +122,7 @@
       display: none;
     }
     &__wrp {
-      grid-template-columns: repeat(auto-fit, 570px);
-      justify-content: center;
+      grid-template-columns: 1fr;
     }
   }
 }
@@ -187,10 +185,7 @@
     margin-bottom: 20px;
   }
   .contacts {
-    &__form {
-      // grid-template: 45px 45px 190px 45px 45px / 300px;
-      // grid-template-columns: repeat(auto-fit, 300px);
-    }
+    padding-top: 40px;
   }
 }
 
@@ -246,6 +241,30 @@
   .price {
     &__wrp {
       grid-template-columns: repeat(auto-fit, 300px);
+    }
+  }
+  .contacts {
+    padding-bottom: 50px;
+    &__form {
+      grid-template: 45px 45px 145px minmax(45px, auto) / 1fr;
+    }
+    &__textarea {
+      grid-column: unset;
+    }
+    &__triggers {
+      grid-column: unset;
+      grid-template-columns: 1fr;
+      column-gap: unset;
+      row-gap: 20px;
+    }
+    &__btn {
+      order: 2;
+      min-width: 220px;
+      margin: 0 auto;
+    }
+    &__policy {
+      width: 180px;
+      margin: 0 auto;
     }
   }
 }
