@@ -128,15 +128,15 @@
         </div>
         <div class="container">
             <div class="title title_fz16 title_left">Меня зовут Ольдер Сергей</div>
-            <h1 class="title title_fz48 promo__title">Я web-разработчик из города Москва</h1>
-            <div class="promo__btns">
-                <a href="#" class="promo__link btn">Портфолио</a>
-                <a href="#" class="promo__link">Про меня</a>
+            <h1 class="title title_fz48 promo__title">Я web-разработчик</h1>
+            <div id="menu" class="promo__btns">
+                <a href="#portfolio" class="promo__link btn">Портфолио</a>
+                <a href="#aboutME" class="promo__link">Про меня</a>
             </div>
         </div>
     </section>
 
-    <section class="aboutMe">
+    <section id="aboutME" class="aboutMe">
         <div class="container">
             <div class="aboutMe__grid-container">
                 <div class="aboutMe__photo">
@@ -144,14 +144,14 @@
                          max-width: 576px - ДО заданного разрешения загрузить какртинку указанную в srcset
                          min-width: 577px - ОТ заданного разрешения загрузить картинку указанную в scrset -->
                     <picture>
-                        <source media="(max-width: 576px)" srcset="img/main_photo-min.jpg">
-                        <source media="(min-width: 577px)" srcset="img/main_photo.jpg">
-                        <img src="img/main_photo.jpg" alt="photo">
+                        <source media="(max-width: 576px)" srcset="img/main_photo-min.png">
+                        <source media="(min-width: 577px)" srcset="img/main_photo.png">
+                        <img src="img/main_photo.png" alt="photo">
                     </picture>
                 </div>
                 <div class="aboutMe__text">
                     <h2 class="title title_fz16 title_left">Про меня</h2>
-                    <div class="title title_fz36">Меня зовут Александра</div>
+                    <div class="title title_fz36">Меня зовут Сергей</div>
                     <div class="divider"></div>
                     <p class="descr aboutMe__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod
@@ -195,7 +195,7 @@
     <section class="resume">
         <div class="container">
             <h2 class="title title_fz16 title_center">Опыт</h2>
-            <div class="title title_fz36 subtitle_center">Чем я буду полезна</div>
+            <div class="title title_fz36 subtitle_center">Чем я буду полезен</div>
             <div class="divider"></div>
             <div class="resume__wrapper">
                 <div class="resume__column">
@@ -374,7 +374,7 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="title title_fz16 title_center">Портфолио</h2>
             <div class="title title_fz36 subtitle_center">Мои работы</div>
@@ -448,7 +448,7 @@
         <div class="container">
             <div class="contacts__wrp">
                 <div class="contacts__photo">
-                    <img src="img/main_photo.jpg" alt="photo">
+                    <img src="img/main_photo.png" alt="photo">
                 </div>
                 <div class="contacts__text">
                     <h2 class="title title_fz16 title_left">Контакты</h2>
@@ -502,6 +502,7 @@
         </div>
     </section>
 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

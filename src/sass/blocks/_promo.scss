@@ -13,6 +13,9 @@
     width: 250px;
     align-items: center;
     justify-content: space-between;
+    a {
+      transition: all 0.5s;
+    }
   }
   &__link {
     color: #000;
